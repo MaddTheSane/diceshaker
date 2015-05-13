@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -331,8 +331,12 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Diceshaker" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -407,7 +411,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$INFINITELABS_TOOLS\"/BuildLocale\n\n";
+			shellScript = "export INFINITELABS_TOOLS=\"${PROJECT_DIR}\"/../Vendor/BuildTools\n\"$INFINITELABS_TOOLS\"/BuildLocale\n#./Vendor/BuildTools/BuildLocale\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

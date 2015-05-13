@@ -1,0 +1,3 @@
+[submodule "Vendor/BuildTools"]
+	path = Vendor/BuildTools
+	url = https://github.com/millenomi/infinitelabs-build-tools.git
