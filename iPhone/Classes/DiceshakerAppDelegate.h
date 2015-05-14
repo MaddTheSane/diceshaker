@@ -52,18 +52,18 @@ enum {
 	NSURL* returnCrossAppURL;
 }
 
-@property (nonatomic, retain) UIWindow *window;
-@property (nonatomic, retain) UIViewController* mainController;
-@property (nonatomic, retain) UINavigationController* navigationController;
-@property (nonatomic, retain) UIViewController* backSideController;
-@property (nonatomic, retain) L0Dice* currentDice;
+@property (nonatomic, strong) UIWindow *window;
+@property (nonatomic, strong) UIViewController* mainController;
+@property (nonatomic, strong) UINavigationController* navigationController;
+@property (nonatomic, strong) UIViewController* backSideController;
+@property (nonatomic, strong) L0Dice* currentDice;
 
 @property (readonly) NSMutableArray* history;
 @property (readonly) NSArray* lastRoll;
 
 @property (assign) BOOL flippingBack;
 
-@property(retain) UIAcceleration* lastAcceleration;
+@property (strong) UIAcceleration* lastAcceleration;
 
 - (IBAction) roll;
 - (void) playRollSound;

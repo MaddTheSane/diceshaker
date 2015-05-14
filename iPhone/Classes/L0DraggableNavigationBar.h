@@ -10,11 +10,11 @@
 
 
 @interface L0DraggableNavigationBar : UINavigationBar {
-	IBOutlet id touchTarget;
+	IBOutlet id __weak touchTarget;
 	SEL touchAction;
 }
 
-@property (assign) id touchTarget;
+@property (weak) id touchTarget;
 @property (assign) SEL touchAction;
 
 @end

@@ -58,13 +58,12 @@
 }
 
 - (IBAction) eraseRollHistory {
-	UIActionSheet* sheet = [[[UIActionSheet alloc]
+	UIActionSheet* sheet = [[UIActionSheet alloc]
 							 initWithTitle:nil
 							 delegate:self
 							 cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel button title")
 							 destructiveButtonTitle:NSLocalizedString(@"Erase", @"Erase button title")
-							 otherButtonTitles:nil]
-							autorelease];
+							 otherButtonTitles:nil];
 	[sheet showInView:self.view];
 }
 
@@ -87,9 +86,6 @@
 }
 
 
-- (void)dealloc {
-	[super dealloc];
-}
 
 
 @end

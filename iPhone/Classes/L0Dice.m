@@ -13,11 +13,11 @@
 
 @synthesize numberOfDice, numberOfFacesPerDie;
 
-+ diceWithNumberOfDice:(NSUInteger) dice faces:(NSUInteger) faces {
++ (id)diceWithNumberOfDice:(NSUInteger) dice faces:(NSUInteger) faces {
 	L0Dice* x = [self new];
 	x.numberOfDice = dice;
 	x.numberOfFacesPerDie = faces;
-	return [x autorelease];
+	return x;
 }
 
 - (NSString*) description {
@@ -55,7 +55,7 @@
 		
 		long roll = (long) ceil(randomVar * self.numberOfFacesPerDie);
 		
-		[dice addObject:[NSNumber numberWithLong:roll]];
+		[dice addObject:@(roll)];
 	}
 	
 	return dice;

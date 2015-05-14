@@ -56,7 +56,7 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
 		}
 	}
 	
-	if (AudioServicesCreateSystemSoundID((CFURLRef) [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"roll" ofType:@"aiff"]], &systemSound) == noErr)
+	if (AudioServicesCreateSystemSoundID((__bridge CFURLRef) [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"roll" ofType:@"aiff"]], &systemSound) == noErr)
 		systemSoundAvailable = YES;
 	
 	[UIAccelerometer sharedAccelerometer].delegate = self;
@@ -99,7 +99,7 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
 		NSDictionary* d = [url dictionaryByDecodingQueryString];
 		id returnURL = [d objectForKey:@"returnURL"];
 		if (returnURL && ![returnURL isEqual:[NSNull null]])
-			returnCrossAppURL = [[NSURL URLWithString:returnURL] retain];
+			returnCrossAppURL = [NSURL URLWithString:returnURL];
 		
 		NSString* title = [d objectForKey:@"sender"];
 		if (!(title && ![title isEqual:[NSNull null]]))
@@ -144,9 +144,9 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
 
 - (IBAction) sendToOtherApp;
 {
-	NSString* numberOfDice = [NSString stringWithFormat:@"%d", self.currentDice.numberOfDice];
-	NSString* numberOfFacesPerDie = [NSString stringWithFormat:@"%d", self.currentDice.numberOfFacesPerDie];
-	NSString* roll = [NSString stringWithFormat:@"%d", [lastRoll totalOfDieRoll]];
+	NSString* numberOfDice = [NSString stringWithFormat:@"%lu", (unsigned long)self.currentDice.numberOfDice];
+	NSString* numberOfFacesPerDie = [NSString stringWithFormat:@"%lu", (unsigned long)self.currentDice.numberOfFacesPerDie];
+	NSString* roll = [NSString stringWithFormat:@"%ld", [lastRoll totalOfDieRoll]];
 	
 	[self _sendToOtherApp:[NSDictionary dictionaryWithObjectsAndKeys:
 						   numberOfDice, @"numberOfDice",
@@ -188,17 +188,6 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
 	if (systemSoundAvailable)
 		AudioServicesDisposeSystemSoundID(systemSound);
 	
-	[history release];
-	
-	[lastRoll release];
-	self.window = nil;
-	self.mainController = nil;
-	self.lastAcceleration = nil;
-	self.navigationController = nil;
-	self.currentDice = nil;
-	self.backSideController = nil;
-	
-	[super dealloc];
 }
 
 - (void) playRollSound {
@@ -215,8 +204,7 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
 	[self playRollSound];
 	
 	[self willChangeValueForKey:@"lastRoll"];
-	[lastRoll release];
-	lastRoll = [[self.currentDice rollEachDie] retain];
+	lastRoll = [self.currentDice rollEachDie];
 	[self didChangeValueForKey:@"lastRoll"];
 	
 	if ([history indexOfObject:self.currentDice] == NSNotFound)
@@ -224,7 +212,7 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
 }
 
 - (IBAction) flipToBackSide {
-	self.backSideController.view;
+	id generate = self.backSideController.view;
 	
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:window cache:NO];
@@ -237,7 +225,7 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
 }
 
 - (IBAction) flipToFrontSide {
-	self.mainController.view;
+	id generate = self.mainController.view;
 	
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:window cache:NO];

@@ -63,16 +63,9 @@
 }
 
 - (void)dealloc {
-	[dicePicker release];
-	[container release];
-	[historyTable release];
-	[resultLabel release];
-	[infoButtonHeaderView release];
 	
 	[controller removeObserver:self forKeyPath:@"currentRoll"];
 	
-	[sides release];
-	[super dealloc];
 }
 
 - (IBAction) toggleDicePicker {
@@ -171,27 +164,27 @@
 		case 0: {
 			UILabel* label = [view isKindOfClass:[UILabel class]]? (UILabel*) view : nil;
 			if (!label) {
-				label = [[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 40, 40)] autorelease];
-				label.textAlignment = UITextAlignmentCenter;
+				label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+				label.textAlignment = NSTextAlignmentCenter;
 				label.opaque = NO;
 				label.backgroundColor = [UIColor clearColor];
 				label.font = [UIFont boldSystemFontOfSize:22];
 			}
 			
-			label.text = [NSString stringWithFormat:@"%d", row + 1];
+			label.text = [NSString stringWithFormat:@"%ld", (long)(row + 1)];
 			return label;
 		}
 			
 		case 1: {
 			UIImageView* imageView = [view isKindOfClass:[UIImageView class]]? (UIImageView*) view : nil;
 			if (!imageView)
-				imageView = [[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 180, 180)] autorelease];
+				imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 180, 180)];
 			
 			NSNumber* num = [sides objectAtIndex:row];
 			NSString* imgName = [NSString stringWithFormat:@"d%@", num];
 			NSString* imgPath = [[NSBundle mainBundle] pathForResource:imgName ofType:@"png"];
 			
-			UIImage* img = [[[UIImage alloc] initWithContentsOfFile:imgPath] autorelease];
+			UIImage* img = [[UIImage alloc] initWithContentsOfFile:imgPath];
 			imageView.image = img;
 			
 			return imageView;
@@ -229,7 +222,7 @@
 		[self selectCurrentDice:YES];
 	} else if ([keyPath isEqual:@"lastRoll"]) {
 		if (controller.lastRoll) {
-			resultLabel.text = [NSString stringWithFormat:@"%d", [controller.lastRoll totalOfDieRoll]];
+			resultLabel.text = [NSString stringWithFormat:@"%ld", [controller.lastRoll totalOfDieRoll]];
 			
 			NSMutableString* str = [NSMutableString string];
 			BOOL first = YES;
@@ -270,7 +263,7 @@
 
 - (void) selectCurrentDice:(BOOL) ani {
 	L0Dice* roll = controller.currentDice;
-	NSUInteger diceRow = [sides indexOfObject:[NSNumber numberWithInteger:roll.numberOfFacesPerDie]];
+	NSUInteger diceRow = [sides indexOfObject:@(roll.numberOfFacesPerDie)];
 	if (diceRow == NSNotFound)
 		return;
 	
@@ -280,7 +273,7 @@
 
 - (void) pickerView:(UIPickerView*) pickerView didSelectRow:(NSInteger) row inComponent:(NSInteger) component {
 	
-	L0Dice* d = [[controller.currentDice copy] autorelease];
+	L0Dice* d = [controller.currentDice copy];
 
 	if (component == 0)
 		d.numberOfDice = row + 1;
@@ -297,10 +290,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"L0HistoryCell"];
 	if (!cell)
-		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero] autorelease];
+		cell = [[UITableViewCell alloc] initWithFrame:CGRectZero];
 	
-	cell.text = [[controller.history objectAtIndex:[indexPath row]] description];
-	cell.textColor = [UIColor whiteColor];
+	cell.textLabel.text = [[controller.history objectAtIndex:[indexPath row]] description];
+	cell.textLabel.textColor = [UIColor whiteColor];
 	return cell;
 }
 
@@ -320,7 +313,7 @@
 	v.opaque = NO;
 	v.backgroundColor = [UIColor clearColor];
 	v.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-	return [v autorelease];
+	return v;
 }
 
 @end

@@ -16,15 +16,12 @@
 
 
 
-@interface L0Dice : NSObject <NSCopying> {
-	NSUInteger numberOfDice;
-	NSUInteger numberOfFacesPerDie;
-}
+@interface L0Dice : NSObject <NSCopying>
 
 @property NSUInteger numberOfDice;
 @property NSUInteger numberOfFacesPerDie;
 
-+ diceWithNumberOfDice:(NSUInteger) dice faces:(NSUInteger) faces;
++ (instancetype) diceWithNumberOfDice:(NSUInteger) dice faces:(NSUInteger) faces;
 
 - (long) roll;
 - (NSArray*) rollEachDie; // returns a NSArray of NSNumbers, each the result of a rolled die.

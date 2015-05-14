@@ -10,13 +10,11 @@
 
 
 @interface L0AboutPane : UIViewController <UIActionSheetDelegate> {
-	IBOutlet UILabel* versionLabel;
 	IBOutlet UILabel* soundSwitchLabel;
-	IBOutlet UISwitch* soundSwitch;
 }
 
-@property(assign) UILabel* versionLabel;
-@property(assign) UISwitch* soundSwitch;
+@property (weak) IBOutlet UILabel* versionLabel;
+@property (weak) IBOutlet UISwitch* soundSwitch;
 
 - (IBAction) goToInfiniteLabsDotNet;
 - (IBAction) soundSwitchChanged;
