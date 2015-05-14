@@ -77,10 +77,74 @@
 		5518A49B1B041D05005AF928 /* L0DiceshakerUnknownURL.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5518A46A1B041D05005AF928 /* L0DiceshakerUnknownURL.strings */; };
 		5518A49C1B041D05005AF928 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5518A46C1B041D05005AF928 /* Localizable.strings */; };
 		5518A49E1B041DA2005AF928 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5518A49D1B041DA2005AF928 /* Media.xcassets */; };
+		551B9F081B042FA7008A8D1B /* Dice.png in Resources */ = {isa = PBXBuildFile; fileRef = 150009CB0E47372A0064D928 /* Dice.png */; };
+		551B9F091B042FA7008A8D1B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 15ACF4040E4760D500A41681 /* Icon.png */; };
+		551B9F0A1B042FA7008A8D1B /* Icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = 15ACF40D0E4762A600A41681 /* Icon512.png */; };
+		551B9F0B1B042FA7008A8D1B /* roll.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 15ACF45C0E476B3100A41681 /* roll.aiff */; };
+		551B9F0D1B042FA7008A8D1B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 152E43160E4781050034168E /* Localizable.strings */; };
+		551B9F0E1B042FA7008A8D1B /* L0DiceshakerLastNag.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5518A4661B041D05005AF928 /* L0DiceshakerLastNag.strings */; };
+		551B9F0F1B042FA7008A8D1B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1585A1940E47A21B00D2015B /* Default.png */; };
+		551B9F101B042FA7008A8D1B /* L0DiceshakerFirstNag.alert in Resources */ = {isa = PBXBuildFile; fileRef = 1544B7CC0EA7CC4B00695980 /* L0DiceshakerFirstNag.alert */; };
+		551B9F111B042FA7008A8D1B /* L0DiceshakerLastNag.alert in Resources */ = {isa = PBXBuildFile; fileRef = 1544B7CD0EA7CC4B00695980 /* L0DiceshakerLastNag.alert */; };
+		551B9F121B042FA7008A8D1B /* L0DiceshakerNagDisabled.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1555A8AE0EDF5A5C009EC3F5 /* L0DiceshakerNagDisabled.strings */; };
+		551B9F131B042FA7008A8D1B /* d4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5518A45E1B041D05005AF928 /* d4.png */; };
+		551B9F141B042FA7008A8D1B /* d12.png in Resources */ = {isa = PBXBuildFile; fileRef = 5518A4561B041D05005AF928 /* d12.png */; };
+		551B9F151B042FA7008A8D1B /* L0DiceshakerUnknownURL.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5518A46A1B041D05005AF928 /* L0DiceshakerUnknownURL.strings */; };
+		551B9F161B042FA7008A8D1B /* L0DiceshakerLastNag.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1555A8B00EDF5A5C009EC3F5 /* L0DiceshakerLastNag.strings */; };
+		551B9F171B042FA7008A8D1B /* L0DiceshakerFirstNag.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1555A8B20EDF5A5C009EC3F5 /* L0DiceshakerFirstNag.strings */; };
+		551B9F181B042FA7008A8D1B /* L0DiceshakerNagDisabled.alert in Resources */ = {isa = PBXBuildFile; fileRef = 1555A8E00EDF5D95009EC3F5 /* L0DiceshakerNagDisabled.alert */; };
+		551B9F191B042FA7008A8D1B /* L0DiceshakerUnknownURL.alert in Resources */ = {isa = PBXBuildFile; fileRef = 15A3E6800EDFD75B0074434F /* L0DiceshakerUnknownURL.alert */; };
+		551B9F1A1B042FA7008A8D1B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5518A49D1B041DA2005AF928 /* Media.xcassets */; };
+		551B9F1B1B042FA7008A8D1B /* L0DiceshakerFirstNag.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5518A4641B041D05005AF928 /* L0DiceshakerFirstNag.strings */; };
+		551B9F1C1B042FA7008A8D1B /* L0DiceshakerUnknownURL.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15A3E69F0EDFD87B0074434F /* L0DiceshakerUnknownURL.strings */; };
+		551B9F1D1B042FA7008A8D1B /* d100.png in Resources */ = {isa = PBXBuildFile; fileRef = 157D17780F66F13900E2BFB8 /* d100.png */; };
+		551B9F1E1B042FA7008A8D1B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5518A46C1B041D05005AF928 /* Localizable.strings */; };
+		551B9F1F1B042FA7008A8D1B /* d20.png in Resources */ = {isa = PBXBuildFile; fileRef = 5518A45A1B041D05005AF928 /* d20.png */; };
+		551B9F201B042FA7008A8D1B /* d10.png in Resources */ = {isa = PBXBuildFile; fileRef = 157D177A0F66F13900E2BFB8 /* d10.png */; };
+		551B9F211B042FA7008A8D1B /* d8.png in Resources */ = {isa = PBXBuildFile; fileRef = 157D177C0F66F13A00E2BFB8 /* d8.png */; };
+		551B9F221B042FA7008A8D1B /* d8.png in Resources */ = {isa = PBXBuildFile; fileRef = 5518A4621B041D05005AF928 /* d8.png */; };
+		551B9F231B042FA7008A8D1B /* d6.png in Resources */ = {isa = PBXBuildFile; fileRef = 157D177E0F66F13A00E2BFB8 /* d6.png */; };
+		551B9F241B042FA7008A8D1B /* d4.png in Resources */ = {isa = PBXBuildFile; fileRef = 157D17800F66F13A00E2BFB8 /* d4.png */; };
+		551B9F251B042FA7008A8D1B /* d100.png in Resources */ = {isa = PBXBuildFile; fileRef = 5518A4541B041D05005AF928 /* d100.png */; };
+		551B9F261B042FA7008A8D1B /* d2.png in Resources */ = {isa = PBXBuildFile; fileRef = 157D17820F66F13A00E2BFB8 /* d2.png */; };
+		551B9F271B042FA7008A8D1B /* d2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5518A4581B041D05005AF928 /* d2.png */; };
+		551B9F281B042FA7008A8D1B /* d3.png in Resources */ = {isa = PBXBuildFile; fileRef = 157D17840F66F13A00E2BFB8 /* d3.png */; };
+		551B9F291B042FA7008A8D1B /* d20.png in Resources */ = {isa = PBXBuildFile; fileRef = 157D17860F66F13A00E2BFB8 /* d20.png */; };
+		551B9F2A1B042FA7008A8D1B /* d12.png in Resources */ = {isa = PBXBuildFile; fileRef = 157D17880F66F13A00E2BFB8 /* d12.png */; };
+		551B9F2B1B042FA7008A8D1B /* L0DiceshakerNagDisabled.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5518A4681B041D05005AF928 /* L0DiceshakerNagDisabled.strings */; };
+		551B9F2C1B042FA7008A8D1B /* d6.png in Resources */ = {isa = PBXBuildFile; fileRef = 5518A4601B041D05005AF928 /* d6.png */; };
+		551B9F2D1B042FA7008A8D1B /* d10.png in Resources */ = {isa = PBXBuildFile; fileRef = 5518A4521B041D05005AF928 /* d10.png */; };
+		551B9F2E1B042FA7008A8D1B /* Default-x-infinitelabs-diceshaker.png in Resources */ = {isa = PBXBuildFile; fileRef = 15972C460F6E68CC00064EC2 /* Default-x-infinitelabs-diceshaker.png */; };
+		551B9F2F1B042FA7008A8D1B /* d3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5518A45C1B041D05005AF928 /* d3.png */; };
+		551B9F311B042FA7008A8D1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		551B9F321B042FA7008A8D1B /* DiceshakerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* DiceshakerAppDelegate.m */; };
+		551B9F331B042FA7008A8D1B /* L0Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546C5290E47148300B3EF0C /* L0Dice.m */; };
+		551B9F341B042FA7008A8D1B /* L0DiceRollerPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546C52F0E47164300B3EF0C /* L0DiceRollerPane.m */; };
+		551B9F351B042FA7008A8D1B /* L0AboutPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 15000B2A0E474C120064D928 /* L0AboutPane.m */; };
+		551B9F361B042FA7008A8D1B /* UIAlertView+L0Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544B7940EA7C59700695980 /* UIAlertView+L0Alert.m */; };
+		551B9F371B042FA7008A8D1B /* L0DiceshakerNagTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567FA9B0EDECB6200992081 /* L0DiceshakerNagTester.m */; };
+		551B9F381B042FA7008A8D1B /* NSURL_L0URLParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBFAA0F4377B0002194B6 /* NSURL_L0URLParsing.m */; };
+		551B9F391B042FA7008A8D1B /* L0DraggableNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 15934EC40F4589AC00EFADD4 /* L0DraggableNavigationBar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		551B9F3B1B042FA7008A8D1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		551B9F3C1B042FA7008A8D1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		551B9F3D1B042FA7008A8D1B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150009F50E47411A0064D928 /* CoreGraphics.framework */; };
+		551B9F3E1B042FA7008A8D1B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15000B000E474A140064D928 /* QuartzCore.framework */; };
+		551B9F3F1B042FA7008A8D1B /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15ACF43F0E47691A00A41681 /* CoreAudio.framework */; };
+		551B9F401B042FA7008A8D1B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15ACF4460E47695000A41681 /* AudioToolbox.framework */; };
+		551B9F4D1B042FAB008A8D1B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 551B9F491B042FAB008A8D1B /* MainWindow.xib */; };
+		551B9F4E1B042FAB008A8D1B /* L0AboutPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 551B9F4B1B042FAB008A8D1B /* L0AboutPane.xib */; };
+		551B9F4F1B04301A008A8D1B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5518A49F1B042503005AF928 /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		154232610E6F3EB200335D5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 154232580E6F3BA800335D5C;
+			remoteInfo = "Update Localizations";
+		};
+		551B9F051B042FA7008A8D1B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
@@ -194,6 +258,11 @@
 		5518A48D1B041D05005AF928 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/L0DiceshakerUnknownURL.strings; sourceTree = "<group>"; };
 		5518A48E1B041D05005AF928 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5518A49D1B041DA2005AF928 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Resources/Media.xcassets; sourceTree = "<group>"; };
+		5518A49F1B042503005AF928 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = Resources/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		551B9F461B042FA7008A8D1B /* Diceshaker-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diceshaker-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		551B9F481B042FA8008A8D1B /* Diceshaker copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Diceshaker copy-Info.plist"; path = "/Users/cwbetts/makestuff/diceshaker/iPhone/Diceshaker copy-Info.plist"; sourceTree = "<absolute>"; };
+		551B9F4A1B042FAB008A8D1B /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = "Resources-iPad/English.lproj/MainWindow.xib"; sourceTree = "<group>"; };
+		551B9F4C1B042FAB008A8D1B /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = "Resources-iPad/English.lproj/L0AboutPane.xib"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,6 +277,19 @@
 				15000B010E474A140064D928 /* QuartzCore.framework in Frameworks */,
 				15ACF4400E47691A00A41681 /* CoreAudio.framework in Frameworks */,
 				15ACF4470E47695000A41681 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		551B9F3A1B042FA7008A8D1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551B9F3B1B042FA7008A8D1B /* Foundation.framework in Frameworks */,
+				551B9F3C1B042FA7008A8D1B /* UIKit.framework in Frameworks */,
+				551B9F3D1B042FA7008A8D1B /* CoreGraphics.framework in Frameworks */,
+				551B9F3E1B042FA7008A8D1B /* QuartzCore.framework in Frameworks */,
+				551B9F3F1B042FA7008A8D1B /* CoreAudio.framework in Frameworks */,
+				551B9F401B042FA7008A8D1B /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* Diceshaker.app */,
+				551B9F461B042FA7008A8D1B /* Diceshaker-iPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -288,12 +371,14 @@
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				15A3E6570EDFD5740074434F /* Locales */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				551B9F471B042FA8008A8D1B /* Resources-iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				150009F50E47411A0064D928 /* CoreGraphics.framework */,
 				15000B000E474A140064D928 /* QuartzCore.framework */,
 				15ACF43F0E47691A00A41681 /* CoreAudio.framework */,
 				15ACF4460E47695000A41681 /* AudioToolbox.framework */,
+				551B9F481B042FA8008A8D1B /* Diceshaker copy-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -327,6 +412,7 @@
 				152E43060E4780670034168E /* L0AboutPane.xib */,
 				158240330E477F8B00107A4B /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
+				5518A49F1B042503005AF928 /* MainStoryboard.storyboard */,
 				15A3E69F0EDFD87B0074434F /* L0DiceshakerUnknownURL.strings */,
 				1555A8AE0EDF5A5C009EC3F5 /* L0DiceshakerNagDisabled.strings */,
 				1555A8B00EDF5A5C009EC3F5 /* L0DiceshakerLastNag.strings */,
@@ -365,6 +451,15 @@
 			path = "Compiled Locales";
 			sourceTree = "<group>";
 		};
+		551B9F471B042FA8008A8D1B /* Resources-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				551B9F491B042FAB008A8D1B /* MainWindow.xib */,
+				551B9F4B1B042FAB008A8D1B /* L0AboutPane.xib */,
+			);
+			name = "Resources-iPad";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -384,6 +479,24 @@
 			name = Diceshaker;
 			productName = Diceshaker;
 			productReference = 1D6058910D05DD3D006BFB54 /* Diceshaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		551B9F031B042FA7008A8D1B /* Diceshaker-iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 551B9F411B042FA7008A8D1B /* Build configuration list for PBXNativeTarget "Diceshaker-iPad" */;
+			buildPhases = (
+				551B9F061B042FA7008A8D1B /* Resources */,
+				551B9F301B042FA7008A8D1B /* Sources */,
+				551B9F3A1B042FA7008A8D1B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				551B9F041B042FA7008A8D1B /* PBXTargetDependency */,
+			);
+			name = "Diceshaker-iPad";
+			productName = Diceshaker;
+			productReference = 551B9F461B042FA7008A8D1B /* Diceshaker-iPad.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -414,6 +527,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* Diceshaker */,
+				551B9F031B042FA7008A8D1B /* Diceshaker-iPad */,
 				154232580E6F3BA800335D5C /* Update Localizations */,
 			);
 		};
@@ -468,6 +582,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		551B9F061B042FA7008A8D1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551B9F081B042FA7008A8D1B /* Dice.png in Resources */,
+				551B9F091B042FA7008A8D1B /* Icon.png in Resources */,
+				551B9F0A1B042FA7008A8D1B /* Icon512.png in Resources */,
+				551B9F0B1B042FA7008A8D1B /* roll.aiff in Resources */,
+				551B9F0D1B042FA7008A8D1B /* Localizable.strings in Resources */,
+				551B9F0E1B042FA7008A8D1B /* L0DiceshakerLastNag.strings in Resources */,
+				551B9F0F1B042FA7008A8D1B /* Default.png in Resources */,
+				551B9F101B042FA7008A8D1B /* L0DiceshakerFirstNag.alert in Resources */,
+				551B9F111B042FA7008A8D1B /* L0DiceshakerLastNag.alert in Resources */,
+				551B9F121B042FA7008A8D1B /* L0DiceshakerNagDisabled.strings in Resources */,
+				551B9F131B042FA7008A8D1B /* d4.png in Resources */,
+				551B9F141B042FA7008A8D1B /* d12.png in Resources */,
+				551B9F151B042FA7008A8D1B /* L0DiceshakerUnknownURL.strings in Resources */,
+				551B9F161B042FA7008A8D1B /* L0DiceshakerLastNag.strings in Resources */,
+				551B9F171B042FA7008A8D1B /* L0DiceshakerFirstNag.strings in Resources */,
+				551B9F181B042FA7008A8D1B /* L0DiceshakerNagDisabled.alert in Resources */,
+				551B9F191B042FA7008A8D1B /* L0DiceshakerUnknownURL.alert in Resources */,
+				551B9F1A1B042FA7008A8D1B /* Media.xcassets in Resources */,
+				551B9F1B1B042FA7008A8D1B /* L0DiceshakerFirstNag.strings in Resources */,
+				551B9F1C1B042FA7008A8D1B /* L0DiceshakerUnknownURL.strings in Resources */,
+				551B9F1D1B042FA7008A8D1B /* d100.png in Resources */,
+				551B9F1E1B042FA7008A8D1B /* Localizable.strings in Resources */,
+				551B9F1F1B042FA7008A8D1B /* d20.png in Resources */,
+				551B9F201B042FA7008A8D1B /* d10.png in Resources */,
+				551B9F4F1B04301A008A8D1B /* MainStoryboard.storyboard in Resources */,
+				551B9F211B042FA7008A8D1B /* d8.png in Resources */,
+				551B9F221B042FA7008A8D1B /* d8.png in Resources */,
+				551B9F231B042FA7008A8D1B /* d6.png in Resources */,
+				551B9F241B042FA7008A8D1B /* d4.png in Resources */,
+				551B9F251B042FA7008A8D1B /* d100.png in Resources */,
+				551B9F261B042FA7008A8D1B /* d2.png in Resources */,
+				551B9F271B042FA7008A8D1B /* d2.png in Resources */,
+				551B9F281B042FA7008A8D1B /* d3.png in Resources */,
+				551B9F291B042FA7008A8D1B /* d20.png in Resources */,
+				551B9F2A1B042FA7008A8D1B /* d12.png in Resources */,
+				551B9F4E1B042FAB008A8D1B /* L0AboutPane.xib in Resources */,
+				551B9F2B1B042FA7008A8D1B /* L0DiceshakerNagDisabled.strings in Resources */,
+				551B9F2C1B042FA7008A8D1B /* d6.png in Resources */,
+				551B9F4D1B042FAB008A8D1B /* MainWindow.xib in Resources */,
+				551B9F2D1B042FA7008A8D1B /* d10.png in Resources */,
+				551B9F2E1B042FA7008A8D1B /* Default-x-infinitelabs-diceshaker.png in Resources */,
+				551B9F2F1B042FA7008A8D1B /* d3.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -503,6 +666,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		551B9F301B042FA7008A8D1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551B9F311B042FA7008A8D1B /* main.m in Sources */,
+				551B9F321B042FA7008A8D1B /* DiceshakerAppDelegate.m in Sources */,
+				551B9F331B042FA7008A8D1B /* L0Dice.m in Sources */,
+				551B9F341B042FA7008A8D1B /* L0DiceRollerPane.m in Sources */,
+				551B9F351B042FA7008A8D1B /* L0AboutPane.m in Sources */,
+				551B9F361B042FA7008A8D1B /* UIAlertView+L0Alert.m in Sources */,
+				551B9F371B042FA7008A8D1B /* L0DiceshakerNagTester.m in Sources */,
+				551B9F381B042FA7008A8D1B /* NSURL_L0URLParsing.m in Sources */,
+				551B9F391B042FA7008A8D1B /* L0DraggableNavigationBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -510,6 +689,11 @@
 			isa = PBXTargetDependency;
 			target = 154232580E6F3BA800335D5C /* Update Localizations */;
 			targetProxy = 154232610E6F3EB200335D5C /* PBXContainerItemProxy */;
+		};
+		551B9F041B042FA7008A8D1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 154232580E6F3BA800335D5C /* Update Localizations */;
+			targetProxy = 551B9F051B042FA7008A8D1B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -787,6 +971,22 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
+		551B9F491B042FAB008A8D1B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				551B9F4A1B042FAB008A8D1B /* English */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		551B9F4B1B042FAB008A8D1B /* L0AboutPane.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				551B9F4C1B042FAB008A8D1B /* English */,
+			);
+			name = L0AboutPane.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -799,7 +999,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBC_NOTICES = NO;
-				PREBINDING = NO;
 			};
 			name = "App Store";
 		};
@@ -808,11 +1007,14 @@
 			baseConfigurationReference = 15D1C5650F889BEF00FF3016 /* Diceshaker-Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = Diceshaker;
 			};
 			name = "App Store";
@@ -854,7 +1056,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBC_NOTICES = NO;
-				PREBINDING = NO;
 			};
 			name = "Ad Hoc";
 		};
@@ -863,12 +1064,15 @@
 			baseConfigurationReference = 15D1C5650F889BEF00FF3016 /* Diceshaker-Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = AdHoc.plist;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = Diceshaker;
 			};
 			name = "Ad Hoc";
@@ -885,6 +1089,8 @@
 			baseConfigurationReference = 15D1C5550F889AAE00FF3016 /* Diceshaker-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -893,6 +1099,7 @@
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = Diceshaker;
 			};
 			name = Debug;
@@ -901,15 +1108,94 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				IBC_WARNINGS = NO;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = Diceshaker;
 			};
 			name = Release;
+		};
+		551B9F421B042FA7008A8D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D1C5550F889AAE00FF3016 /* Diceshaker-Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				INFOPLIST_FILE = "Diceshaker copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PRODUCT_NAME = "Diceshaker-iPad";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		551B9F431B042FA7008A8D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
+				IBC_WARNINGS = NO;
+				INFOPLIST_FILE = "Diceshaker copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PRODUCT_NAME = "Diceshaker-iPad";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		551B9F441B042FA7008A8D1B /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D1C5650F889BEF00FF3016 /* Diceshaker-Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
+				INFOPLIST_FILE = "Diceshaker copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PRODUCT_NAME = "Diceshaker-iPad";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = "App Store";
+		};
+		551B9F451B042FA7008A8D1B /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D1C5650F889BEF00FF3016 /* Diceshaker-Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = AdHoc.plist;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
+				INFOPLIST_FILE = "Diceshaker copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PRODUCT_NAME = "Diceshaker-iPad";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = "Ad Hoc";
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -921,7 +1207,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBC_NOTICES = NO;
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
 			};
 			name = Debug;
 		};
@@ -934,7 +1219,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBC_NOTICES = NO;
-				PREBINDING = NO;
 			};
 			name = Release;
 		};
@@ -959,6 +1243,17 @@
 				1D6058950D05DD3E006BFB54 /* Release */,
 				152E43F90E4783C20034168E /* App Store */,
 				15C8589D0E7855A4001156CB /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		551B9F411B042FA7008A8D1B /* Build configuration list for PBXNativeTarget "Diceshaker-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				551B9F421B042FA7008A8D1B /* Debug */,
+				551B9F431B042FA7008A8D1B /* Release */,
+				551B9F441B042FA7008A8D1B /* App Store */,
+				551B9F451B042FA7008A8D1B /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreMotion/CoreMotion.h>
 #import "L0Dice.h"
 
 #import <AudioToolbox/AudioToolbox.h>
@@ -28,13 +29,7 @@ enum {
 
 @class DiceshakerViewController;
 
-@interface DiceshakerAppDelegate : NSObject <UIApplicationDelegate, UIAccelerometerDelegate, UIAlertViewDelegate> {
-	IBOutlet UIWindow *window;
-	IBOutlet UIViewController* mainController;
-	IBOutlet UIViewController* backSideController;
-	
-	IBOutlet UINavigationController* navigationController;
-	
+@interface DiceshakerAppDelegate : NSObject <UIApplicationDelegate, UIAccelerometerDelegate, UIAlertViewDelegate> {	
 	L0Dice* currentDice;
 	NSArray* lastRoll;
 	
@@ -52,10 +47,10 @@ enum {
 	NSURL* returnCrossAppURL;
 }
 
-@property (nonatomic, strong) UIWindow *window;
-@property (nonatomic, strong) UIViewController* mainController;
-@property (nonatomic, strong) UINavigationController* navigationController;
-@property (nonatomic, strong) UIViewController* backSideController;
+@property (nonatomic, strong) IBOutlet UIWindow *window;
+@property (nonatomic, strong) IBOutlet UIViewController* mainController;
+@property (nonatomic, strong) IBOutlet UINavigationController* navigationController;
+@property (nonatomic, strong) IBOutlet UIViewController* backSideController;
 @property (nonatomic, strong) L0Dice* currentDice;
 
 @property (readonly) NSMutableArray* history;
