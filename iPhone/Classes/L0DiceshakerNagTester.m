@@ -10,18 +10,28 @@
 
 #if DEBUG
 
+@interface DiceshakerAppDelegate (private)
+- (void) _showNagMessagesDisabled;
+@end
+
 @implementation DiceshakerAppDelegate (L0DiceshakerNagTester)
 
 - (void) testFirstNag {
-	[self performSelector:@selector(showFirstNag) withObject:nil afterDelay:0.01];
+	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_MSEC)), dispatch_get_main_queue(), ^{
+		[self showFirstNag];
+	});
 }
 
 - (void) testLastNag {
-	[self performSelector:@selector(showLastNag) withObject:nil afterDelay:0.01];
+	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_MSEC)), dispatch_get_main_queue(), ^{
+		[self showLastNag];
+	});
 }
 
 - (void) testNagsOff {
-	[self performSelector:@selector(_showNagMessagesDisabled) withObject:nil afterDelay:0.01];
+	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_MSEC)), dispatch_get_main_queue(), ^{
+		[self _showNagMessagesDisabled];
+	});
 }
 
 @end

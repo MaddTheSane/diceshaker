@@ -11,6 +11,7 @@
 
 #import "NSURL_L0URLParsing.h"
 
+#if 0
 static BOOL L0AccelerationIsShaking(CMAccelerometerData* last, CMAccelerometerData* current, double threshold) {
 	double
 	deltaX = fabs(last.acceleration.x - current.acceleration.x),
@@ -22,6 +23,19 @@ static BOOL L0AccelerationIsShaking(CMAccelerometerData* last, CMAccelerometerDa
 	(deltaX > threshold && deltaZ > threshold) ||
 	(deltaY > threshold && deltaZ > threshold);
 }
+#else
+static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current, double threshold) {
+	double
+	deltaX = fabs(last.x - current.x),
+	deltaY = fabs(last.y - current.y),
+	deltaZ = fabs(last.z - current.z);
+	
+	return
+	(deltaX > threshold && deltaY > threshold) ||
+	(deltaX > threshold && deltaZ > threshold) ||
+	(deltaY > threshold && deltaZ > threshold);
+}
+#endif
 
 @interface DiceshakerAppDelegate ()
 
@@ -31,8 +45,15 @@ static BOOL L0AccelerationIsShaking(CMAccelerometerData* last, CMAccelerometerDa
 
 
 @implementation DiceshakerAppDelegate
-
-@synthesize window, mainController, backSideController, currentDice, lastRoll, history, lastAcceleration, flippingBack, navigationController;
+@synthesize window;
+@synthesize mainController;
+@synthesize backSideController;
+@synthesize currentDice;
+@synthesize lastRoll;
+@synthesize history;
+@synthesize lastAcceleration;
+@synthesize flippingBack;
+@synthesize navigationController;
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
 	[[NSUserDefaults standardUserDefaults]

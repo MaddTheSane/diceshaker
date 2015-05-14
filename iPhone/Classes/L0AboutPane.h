@@ -9,12 +9,11 @@
 #import <UIKit/UIKit.h>
 
 
-@interface L0AboutPane : UIViewController <UIActionSheetDelegate> {
-	IBOutlet UILabel* soundSwitchLabel;
-}
+@interface L0AboutPane : UIViewController <UIActionSheetDelegate>
 
 @property (weak) IBOutlet UILabel* versionLabel;
 @property (weak) IBOutlet UISwitch* soundSwitch;
+@property (strong) IBOutlet UILabel* soundSwitchLabel;
 
 - (IBAction) goToInfiniteLabsDotNet;
 - (IBAction) soundSwitchChanged;

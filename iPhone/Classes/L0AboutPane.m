@@ -18,7 +18,9 @@
 
 @implementation L0AboutPane
 
-@synthesize versionLabel, soundSwitch;
+@synthesize versionLabel;
+@synthesize soundSwitch;
+@synthesize soundSwitchLabel;
 
 /*
  Implement loadView if you want to create a view hierarchy programmatically

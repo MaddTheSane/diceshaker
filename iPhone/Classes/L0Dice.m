@@ -13,7 +13,7 @@
 
 @synthesize numberOfDice, numberOfFacesPerDie;
 
-+ (id)diceWithNumberOfDice:(NSUInteger) dice faces:(NSUInteger) faces {
++ (instancetype)diceWithNumberOfDice:(NSUInteger) dice faces:(NSUInteger) faces {
 	L0Dice* x = [self new];
 	x.numberOfDice = dice;
 	x.numberOfFacesPerDie = faces;

@@ -127,10 +127,12 @@
 		551B9F3E1B042FA7008A8D1B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15000B000E474A140064D928 /* QuartzCore.framework */; };
 		551B9F3F1B042FA7008A8D1B /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15ACF43F0E47691A00A41681 /* CoreAudio.framework */; };
 		551B9F401B042FA7008A8D1B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15ACF4460E47695000A41681 /* AudioToolbox.framework */; };
-		551B9F4D1B042FAB008A8D1B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 551B9F491B042FAB008A8D1B /* MainWindow.xib */; };
 		551B9F4E1B042FAB008A8D1B /* L0AboutPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 551B9F4B1B042FAB008A8D1B /* L0AboutPane.xib */; };
 		551B9F4F1B04301A008A8D1B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5518A49F1B042503005AF928 /* MainStoryboard.storyboard */; };
 		551B9F511B04392D008A8D1B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551B9F501B04392D008A8D1B /* CoreMotion.framework */; };
+		55D56EEE1B052A9D00DDBF5B /* L0MasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D56EED1B052A9D00DDBF5B /* L0MasterController.swift */; };
+		55D56EF01B052CC800DDBF5B /* DiceRollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D56EEF1B052CC800DDBF5B /* DiceRollerViewController.swift */; };
+		55D56EF21B052E4F00DDBF5B /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D56EF11B052E4F00DDBF5B /* Dice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -260,6 +262,10 @@
 		551B9F4A1B042FAB008A8D1B /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = "Resources-iPad/English.lproj/MainWindow.xib"; sourceTree = "<group>"; };
 		551B9F4C1B042FAB008A8D1B /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = "Resources-iPad/English.lproj/L0AboutPane.xib"; sourceTree = "<group>"; };
 		551B9F501B04392D008A8D1B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		55D56EEC1B052A9C00DDBF5B /* Diceshaker-iPad-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Diceshaker-iPad-Bridging-Header.h"; sourceTree = "<group>"; };
+		55D56EED1B052A9D00DDBF5B /* L0MasterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L0MasterController.swift; sourceTree = "<group>"; };
+		55D56EEF1B052CC800DDBF5B /* DiceRollerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceRollerViewController.swift; sourceTree = "<group>"; };
+		55D56EF11B052E4F00DDBF5B /* Dice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -297,6 +303,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				55D56EEB1B052A2500DDBF5B /* iPad-only */,
 				154EBFA80F437791002194B6 /* Cross-app Communication */,
 				1544B7950EA7C59700695980 /* UIAlertView+L0Alert.h */,
 				1544B7940EA7C59700695980 /* UIAlertView+L0Alert.m */,
@@ -405,7 +412,6 @@
 				152E43060E4780670034168E /* L0AboutPane.xib */,
 				158240330E477F8B00107A4B /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
-				5518A49F1B042503005AF928 /* MainStoryboard.storyboard */,
 				15A3E69F0EDFD87B0074434F /* L0DiceshakerUnknownURL.strings */,
 				1555A8AE0EDF5A5C009EC3F5 /* L0DiceshakerNagDisabled.strings */,
 				1555A8B00EDF5A5C009EC3F5 /* L0DiceshakerLastNag.strings */,
@@ -452,10 +458,23 @@
 		551B9F471B042FA8008A8D1B /* Resources-iPad */ = {
 			isa = PBXGroup;
 			children = (
+				5518A49F1B042503005AF928 /* MainStoryboard.storyboard */,
 				551B9F491B042FAB008A8D1B /* MainWindow.xib */,
 				551B9F4B1B042FAB008A8D1B /* L0AboutPane.xib */,
 			);
 			name = "Resources-iPad";
+			sourceTree = "<group>";
+		};
+		55D56EEB1B052A2500DDBF5B /* iPad-only */ = {
+			isa = PBXGroup;
+			children = (
+				55D56EEC1B052A9C00DDBF5B /* Diceshaker-iPad-Bridging-Header.h */,
+				55D56EED1B052A9D00DDBF5B /* L0MasterController.swift */,
+				55D56EEF1B052CC800DDBF5B /* DiceRollerViewController.swift */,
+				55D56EF11B052E4F00DDBF5B /* Dice.swift */,
+			);
+			name = "iPad-only";
+			path = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -618,7 +637,6 @@
 				551B9F4E1B042FAB008A8D1B /* L0AboutPane.xib in Resources */,
 				551B9F2B1B042FA7008A8D1B /* L0DiceshakerNagDisabled.strings in Resources */,
 				551B9F2C1B042FA7008A8D1B /* d6.png in Resources */,
-				551B9F4D1B042FAB008A8D1B /* MainWindow.xib in Resources */,
 				551B9F2D1B042FA7008A8D1B /* d10.png in Resources */,
 				551B9F2E1B042FA7008A8D1B /* Default-x-infinitelabs-diceshaker.png in Resources */,
 				551B9F2F1B042FA7008A8D1B /* d3.png in Resources */,
@@ -667,11 +685,14 @@
 				551B9F311B042FA7008A8D1B /* main.m in Sources */,
 				551B9F321B042FA7008A8D1B /* DiceshakerAppDelegate.m in Sources */,
 				551B9F331B042FA7008A8D1B /* L0Dice.m in Sources */,
+				55D56EF01B052CC800DDBF5B /* DiceRollerViewController.swift in Sources */,
 				551B9F341B042FA7008A8D1B /* L0DiceRollerPane.m in Sources */,
 				551B9F351B042FA7008A8D1B /* L0AboutPane.m in Sources */,
+				55D56EEE1B052A9D00DDBF5B /* L0MasterController.swift in Sources */,
 				551B9F361B042FA7008A8D1B /* UIAlertView+L0Alert.m in Sources */,
 				551B9F371B042FA7008A8D1B /* L0DiceshakerNagTester.m in Sources */,
 				551B9F381B042FA7008A8D1B /* NSURL_L0URLParsing.m in Sources */,
+				55D56EF21B052E4F00DDBF5B /* Dice.swift in Sources */,
 				551B9F391B042FA7008A8D1B /* L0DraggableNavigationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -988,11 +1009,35 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBC_NOTICES = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
 			};
 			name = "App Store";
 		};
@@ -1000,13 +1045,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15D1C5650F889BEF00FF3016 /* Diceshaker-Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = Diceshaker;
@@ -1045,11 +1090,35 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBC_NOTICES = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
 			};
 			name = "Ad Hoc";
 		};
@@ -1057,7 +1126,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15D1C5650F889BEF00FF3016 /* Diceshaker-Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -1065,6 +1133,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = Diceshaker;
@@ -1082,16 +1151,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15D1C5550F889AAE00FF3016 /* Diceshaker-Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = Diceshaker;
@@ -1101,13 +1167,13 @@
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				IBC_WARNINGS = NO;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
@@ -1119,38 +1185,44 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15D1C5550F889AAE00FF3016 /* Diceshaker-Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "Diceshaker copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Diceshaker-iPad";
-				TARGETED_DEVICE_FAMILY = 2;
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/iPad/Diceshaker-iPad-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_VISIBLE_VERSION = 1.1.0;
+				VERSION = 8.0;
 			};
 			name = Debug;
 		};
 		551B9F431B042FA7008A8D1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				IBC_WARNINGS = NO;
 				INFOPLIST_FILE = "Diceshaker copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Diceshaker-iPad";
-				TARGETED_DEVICE_FAMILY = 2;
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/iPad/Diceshaker-iPad-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_VISIBLE_VERSION = 1.1.0;
+				VERSION = 8.0;
 			};
 			name = Release;
 		};
@@ -1158,17 +1230,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15D1C5650F889BEF00FF3016 /* Diceshaker-Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "Diceshaker copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Diceshaker-iPad";
-				TARGETED_DEVICE_FAMILY = 2;
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/iPad/Diceshaker-iPad-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_VISIBLE_VERSION = 1.1.0;
+				VERSION = 8.0;
 			};
 			name = "App Store";
 		};
@@ -1176,18 +1252,22 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15D1C5650F889BEF00FF3016 /* Diceshaker-Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = AdHoc.plist;
-				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "Diceshaker copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Diceshaker-iPad";
-				TARGETED_DEVICE_FAMILY = 2;
+				SWIFT_OBJC_BRIDGING_HEADER = "Classes/iPad/Diceshaker-iPad-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_VISIBLE_VERSION = 1.1.0;
+				VERSION = 8.0;
 			};
 			name = "Ad Hoc";
 		};
@@ -1195,11 +1275,39 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBC_NOTICES = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
@@ -1208,11 +1316,36 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBC_NOTICES = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
 			};
 			name = Release;
 		};

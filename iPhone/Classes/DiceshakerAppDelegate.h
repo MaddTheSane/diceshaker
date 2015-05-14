@@ -30,15 +30,7 @@ enum {
 @class DiceshakerViewController;
 
 @interface DiceshakerAppDelegate : NSObject <UIApplicationDelegate, UIAccelerometerDelegate, UIAlertViewDelegate> {	
-	L0Dice* currentDice;
-	NSArray* lastRoll;
-	
-	NSMutableArray* history;
-	
 	BOOL histeresisExcited;
-	CMAccelerometerData* lastAcceleration;
-	
-	BOOL flippingBack;
 	
 	BOOL systemSoundAvailable;
 	SystemSoundID systemSound;
@@ -53,12 +45,16 @@ enum {
 @property (nonatomic, strong) IBOutlet UIViewController* backSideController;
 @property (nonatomic, strong) L0Dice* currentDice;
 
-@property (readonly) NSMutableArray* history;
-@property (readonly) NSArray* lastRoll;
+@property (nonatomic, readonly, strong) NSMutableArray* history;
+@property (nonatomic, readonly, copy) NSArray* lastRoll;
 
 @property (assign) BOOL flippingBack;
 
+#if 0
 @property (strong) CMAccelerometerData* lastAcceleration;
+#else
+@property (strong) UIAcceleration* lastAcceleration;
+#endif
 
 - (IBAction) roll;
 - (void) playRollSound;

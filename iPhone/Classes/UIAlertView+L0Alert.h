@@ -35,10 +35,10 @@ extern const NSString* kL0AlertIconName;
 
 @interface UIAlertView (L0Alert)
 
-+ (id) alertNamed:(NSString*) name inBundle:(NSBundle*) bundle directory:(NSString*) directory;
-+ (id) alertNamed:(NSString*) name inBundle:(NSBundle*) bundle;
-+ (id) alertNamed:(NSString*) name;
-+ (id) alertWithContentsOfDictionary:(NSDictionary*) dict name:(NSString*) name bundle:(NSBundle*) bundle;
++ (instancetype) alertNamed:(NSString*) name inBundle:(NSBundle*) bundle directory:(NSString*) directory;
++ (instancetype) alertNamed:(NSString*) name inBundle:(NSBundle*) bundle;
++ (instancetype) alertNamed:(NSString*) name;
++ (instancetype) alertWithContentsOfDictionary:(NSDictionary*) dict name:(NSString*) name bundle:(NSBundle*) bundle;
 
 - (void) setTitleFormat:(id) setMeToNil,...;
 - (void) setMessageFormat:(id) setMeToNil,...;
