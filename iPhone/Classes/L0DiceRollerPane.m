@@ -22,19 +22,22 @@
 
 
 @implementation L0DiceRollerPane
-
+{
+	BOOL dicePickerHidden;
+	
+	NSArray* sides;
+}
+@synthesize controller;
 - (void) viewDidLoad {
-	sides = [[NSArray alloc] initWithObjects:
-			 [NSNumber numberWithInt:2],
-			 [NSNumber numberWithInt:3],
-			 [NSNumber numberWithInt:4],
-			 [NSNumber numberWithInt:6],
-			 [NSNumber numberWithInt:8],
-			 [NSNumber numberWithInt:10],
-			 [NSNumber numberWithInt:12],
-			 [NSNumber numberWithInt:20],
-			 [NSNumber numberWithInt:100],
-			 nil];
+	sides = @[@(2),
+			  @(3),
+			  @(4),
+			  @(6),
+			  @(8),
+			  @(10),
+			  @(12),
+			  @(20),
+			  @(100)];
 	
 	dicePickerHidden = NO;
 	
@@ -82,7 +85,7 @@
 	if (dicePickerHidden) {
 		if (ani) [UIView beginAnimations:nil context:NULL];
 		
-//			[UIView setAnimationTransition:UIViewAnimationTransitionCurlDown forView:self.view.window cache:YES];
+		//[UIView setAnimationTransition:UIViewAnimationTransitionCurlDown forView:self.view.window cache:YES];
 		if (ani) {
 			[UIView setAnimationDuration:0.3];
 			[UIView setAnimationDelegate:self];
@@ -110,7 +113,7 @@
 		
 		if (ani) [UIView beginAnimations:nil context:NULL];
 
-//			[UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.view.window cache:YES];
+		//[UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.view.window cache:YES];
 		if (ani) [UIView setAnimationDuration:0.3];			
 		
 		CGRect newContainerFrame = self.view.bounds;

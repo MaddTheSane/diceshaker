@@ -21,7 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		150009CC0E47372A0064D928 /* Dice.png in Resources */ = {isa = PBXBuildFile; fileRef = 150009CB0E47372A0064D928 /* Dice.png */; };
 		150009F60E47411A0064D928 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150009F50E47411A0064D928 /* CoreGraphics.framework */; };
 		15000B010E474A140064D928 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15000B000E474A140064D928 /* QuartzCore.framework */; };
 		15000B2B0E474C120064D928 /* L0AboutPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 15000B2A0E474C120064D928 /* L0AboutPane.m */; };
@@ -53,7 +52,6 @@
 		15972C470F6E68CC00064EC2 /* Default-x-infinitelabs-diceshaker.png in Resources */ = {isa = PBXBuildFile; fileRef = 15972C460F6E68CC00064EC2 /* Default-x-infinitelabs-diceshaker.png */; };
 		15A3E6810EDFD75B0074434F /* L0DiceshakerUnknownURL.alert in Resources */ = {isa = PBXBuildFile; fileRef = 15A3E6800EDFD75B0074434F /* L0DiceshakerUnknownURL.alert */; };
 		15A3E6A10EDFD87B0074434F /* L0DiceshakerUnknownURL.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15A3E69F0EDFD87B0074434F /* L0DiceshakerUnknownURL.strings */; };
-		15ACF4050E4760D500A41681 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 15ACF4040E4760D500A41681 /* Icon.png */; };
 		15ACF40E0E4762A600A41681 /* Icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = 15ACF40D0E4762A600A41681 /* Icon512.png */; };
 		15ACF4400E47691A00A41681 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15ACF43F0E47691A00A41681 /* CoreAudio.framework */; };
 		15ACF4470E47695000A41681 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15ACF4460E47695000A41681 /* AudioToolbox.framework */; };
@@ -77,8 +75,6 @@
 		5518A49B1B041D05005AF928 /* L0DiceshakerUnknownURL.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5518A46A1B041D05005AF928 /* L0DiceshakerUnknownURL.strings */; };
 		5518A49C1B041D05005AF928 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5518A46C1B041D05005AF928 /* Localizable.strings */; };
 		5518A49E1B041DA2005AF928 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5518A49D1B041DA2005AF928 /* Media.xcassets */; };
-		551B9F081B042FA7008A8D1B /* Dice.png in Resources */ = {isa = PBXBuildFile; fileRef = 150009CB0E47372A0064D928 /* Dice.png */; };
-		551B9F091B042FA7008A8D1B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 15ACF4040E4760D500A41681 /* Icon.png */; };
 		551B9F0A1B042FA7008A8D1B /* Icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = 15ACF40D0E4762A600A41681 /* Icon512.png */; };
 		551B9F0B1B042FA7008A8D1B /* roll.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 15ACF45C0E476B3100A41681 /* roll.aiff */; };
 		551B9F0D1B042FA7008A8D1B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 152E43160E4781050034168E /* Localizable.strings */; };
@@ -134,6 +130,7 @@
 		551B9F4D1B042FAB008A8D1B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 551B9F491B042FAB008A8D1B /* MainWindow.xib */; };
 		551B9F4E1B042FAB008A8D1B /* L0AboutPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 551B9F4B1B042FAB008A8D1B /* L0AboutPane.xib */; };
 		551B9F4F1B04301A008A8D1B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5518A49F1B042503005AF928 /* MainStoryboard.storyboard */; };
+		551B9F511B04392D008A8D1B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551B9F501B04392D008A8D1B /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -263,6 +260,7 @@
 		551B9F481B042FA8008A8D1B /* Diceshaker copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Diceshaker copy-Info.plist"; path = "/Users/cwbetts/makestuff/diceshaker/iPhone/Diceshaker copy-Info.plist"; sourceTree = "<absolute>"; };
 		551B9F4A1B042FAB008A8D1B /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = "Resources-iPad/English.lproj/MainWindow.xib"; sourceTree = "<group>"; };
 		551B9F4C1B042FAB008A8D1B /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = "Resources-iPad/English.lproj/L0AboutPane.xib"; sourceTree = "<group>"; };
+		551B9F501B04392D008A8D1B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -271,6 +269,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551B9F511B04392D008A8D1B /* CoreMotion.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				150009F60E47411A0064D928 /* CoreGraphics.framework in Frameworks */,
@@ -300,8 +299,8 @@
 			isa = PBXGroup;
 			children = (
 				154EBFA80F437791002194B6 /* Cross-app Communication */,
-				1544B7940EA7C59700695980 /* UIAlertView+L0Alert.m */,
 				1544B7950EA7C59700695980 /* UIAlertView+L0Alert.h */,
+				1544B7940EA7C59700695980 /* UIAlertView+L0Alert.m */,
 				15000B290E474C120064D928 /* L0AboutPane.h */,
 				15000B2A0E474C120064D928 /* L0AboutPane.m */,
 				1546C52E0E47164300B3EF0C /* L0DiceRollerPane.h */,
@@ -374,10 +373,6 @@
 				551B9F471B042FA8008A8D1B /* Resources-iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				150009F50E47411A0064D928 /* CoreGraphics.framework */,
-				15000B000E474A140064D928 /* QuartzCore.framework */,
-				15ACF43F0E47691A00A41681 /* CoreAudio.framework */,
-				15ACF4460E47695000A41681 /* AudioToolbox.framework */,
 				551B9F481B042FA8008A8D1B /* Diceshaker copy-Info.plist */,
 			);
 			name = CustomTemplate;
@@ -424,8 +419,13 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				551B9F501B04392D008A8D1B /* CoreMotion.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				150009F50E47411A0064D928 /* CoreGraphics.framework */,
+				15000B000E474A140064D928 /* QuartzCore.framework */,
+				15ACF43F0E47691A00A41681 /* CoreAudio.framework */,
+				15ACF4460E47695000A41681 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -539,8 +539,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				158240340E477F8B00107A4B /* MainWindow.xib in Resources */,
-				150009CC0E47372A0064D928 /* Dice.png in Resources */,
-				15ACF4050E4760D500A41681 /* Icon.png in Resources */,
 				15ACF40E0E4762A600A41681 /* Icon512.png in Resources */,
 				15ACF45D0E476B3100A41681 /* roll.aiff in Resources */,
 				152E43080E4780670034168E /* L0AboutPane.xib in Resources */,
@@ -586,8 +584,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				551B9F081B042FA7008A8D1B /* Dice.png in Resources */,
-				551B9F091B042FA7008A8D1B /* Icon.png in Resources */,
 				551B9F0A1B042FA7008A8D1B /* Icon512.png in Resources */,
 				551B9F0B1B042FA7008A8D1B /* roll.aiff in Resources */,
 				551B9F0D1B042FA7008A8D1B /* Localizable.strings in Resources */,
@@ -1014,7 +1010,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				PRODUCT_NAME = Diceshaker;
 			};
 			name = "App Store";
@@ -1072,7 +1068,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				PRODUCT_NAME = Diceshaker;
 			};
 			name = "Ad Hoc";
@@ -1099,7 +1095,7 @@
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				PRODUCT_NAME = Diceshaker;
 			};
 			name = Debug;
@@ -1116,7 +1112,7 @@
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				IBC_WARNINGS = NO;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				PRODUCT_NAME = Diceshaker;
 			};
 			name = Release;

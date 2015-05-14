@@ -11,11 +11,11 @@
 
 #import "NSURL_L0URLParsing.h"
 
-static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current, double threshold) {
+static BOOL L0AccelerationIsShaking(CMAccelerometerData* last, CMAccelerometerData* current, double threshold) {
 	double
-	deltaX = fabs(last.x - current.x),
-	deltaY = fabs(last.y - current.y),
-	deltaZ = fabs(last.z - current.z);
+	deltaX = fabs(last.acceleration.x - current.acceleration.x),
+	deltaY = fabs(last.acceleration.y - current.acceleration.y),
+	deltaZ = fabs(last.acceleration.z - current.acceleration.z);
 	
 	return
 	(deltaX > threshold && deltaY > threshold) ||

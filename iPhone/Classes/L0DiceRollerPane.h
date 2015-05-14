@@ -22,13 +22,8 @@
 	IBOutlet UIButton* infoButton;
 	
 	IBOutlet L0DraggableNavigationBar* bottomBar;
-	IBOutlet DiceshakerAppDelegate* controller; // TODO @property(assign)
-	
-	BOOL dicePickerHidden;
-	
-	NSArray* sides;
 }
-
+@property (assign) IBOutlet DiceshakerAppDelegate* controller;
 - (IBAction) toggleDicePicker;
 - (void) repositionDicePicker:(BOOL) animated;
 

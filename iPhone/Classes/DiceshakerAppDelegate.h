@@ -36,7 +36,7 @@ enum {
 	NSMutableArray* history;
 	
 	BOOL histeresisExcited;
-	UIAcceleration* lastAcceleration;
+	CMAccelerometerData* lastAcceleration;
 	
 	BOOL flippingBack;
 	
@@ -58,7 +58,7 @@ enum {
 
 @property (assign) BOOL flippingBack;
 
-@property (strong) UIAcceleration* lastAcceleration;
+@property (strong) CMAccelerometerData* lastAcceleration;
 
 - (IBAction) roll;
 - (void) playRollSound;

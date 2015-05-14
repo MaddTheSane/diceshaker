@@ -40,7 +40,7 @@
 }
 
 - (void) viewDidLoad {
-	self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];
+	//self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];
 	
 	versionLabel.text = [NSString stringWithFormat:versionLabel.text, [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
 	if ([self _deviceSupportsVibration])
