@@ -190,7 +190,6 @@
 		15A3E6570EDFD5740074434F /* Locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Locales; sourceTree = "<group>"; };
 		15A3E6800EDFD75B0074434F /* L0DiceshakerUnknownURL.alert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = L0DiceshakerUnknownURL.alert; sourceTree = "<group>"; };
 		15A3E6A00EDFD87B0074434F /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/L0DiceshakerUnknownURL.strings; sourceTree = "<group>"; };
-		15ACF4040E4760D500A41681 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		15ACF40D0E4762A600A41681 /* Icon512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon512.png; sourceTree = "<group>"; };
 		15ACF43F0E47691A00A41681 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		15ACF4460E47695000A41681 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -402,7 +401,6 @@
 				5518A49D1B041DA2005AF928 /* Media.xcassets */,
 				15ACF40D0E4762A600A41681 /* Icon512.png */,
 				150009CB0E47372A0064D928 /* Dice.png */,
-				15ACF4040E4760D500A41681 /* Icon.png */,
 				152E43160E4781050034168E /* Localizable.strings */,
 				152E43060E4780670034168E /* L0AboutPane.xib */,
 				158240330E477F8B00107A4B /* MainWindow.xib */,
@@ -433,15 +431,15 @@
 		5518A4511B041D05005AF928 /* Compiled Locales */ = {
 			isa = PBXGroup;
 			children = (
-				5518A4521B041D05005AF928 /* d10.png */,
-				5518A4541B041D05005AF928 /* d100.png */,
-				5518A4561B041D05005AF928 /* d12.png */,
 				5518A4581B041D05005AF928 /* d2.png */,
-				5518A45A1B041D05005AF928 /* d20.png */,
 				5518A45C1B041D05005AF928 /* d3.png */,
 				5518A45E1B041D05005AF928 /* d4.png */,
 				5518A4601B041D05005AF928 /* d6.png */,
 				5518A4621B041D05005AF928 /* d8.png */,
+				5518A4521B041D05005AF928 /* d10.png */,
+				5518A4561B041D05005AF928 /* d12.png */,
+				5518A45A1B041D05005AF928 /* d20.png */,
+				5518A4541B041D05005AF928 /* d100.png */,
 				5518A4641B041D05005AF928 /* L0DiceshakerFirstNag.strings */,
 				5518A4661B041D05005AF928 /* L0DiceshakerLastNag.strings */,
 				5518A4681B041D05005AF928 /* L0DiceshakerNagDisabled.strings */,
@@ -1010,7 +1008,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = Diceshaker;
 			};
 			name = "App Store";
@@ -1068,7 +1066,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = Diceshaker;
 			};
 			name = "Ad Hoc";
@@ -1095,7 +1093,7 @@
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = Diceshaker;
 			};
 			name = Debug;
@@ -1112,7 +1110,7 @@
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				IBC_WARNINGS = NO;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = Diceshaker;
 			};
 			name = Release;
